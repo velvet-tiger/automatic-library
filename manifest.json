@@ -1,0 +1,427 @@
+{
+  "library_version": "0.1.0",
+  "manifest_schema": 1,
+  "assets": [
+    {
+      "kind": "skill",
+      "id": "automatic",
+      "root": "skills/automatic",
+      "files": [
+        {
+          "path": "skills/automatic/SKILL.md",
+          "sha256": "8a685653173ff2973b135115de31acce1529919e8d0368d609f71251707cab2a"
+        },
+        {
+          "path": "skills/automatic/skill.json",
+          "sha256": "2d94a3196e68d64e950761fececafba66de83fdba8dd00f4908c1746b5eef6a6"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "automatic-api-design",
+      "root": "skills/automatic-api-design",
+      "files": [
+        {
+          "path": "skills/automatic-api-design/SKILL.md",
+          "sha256": "2cf663f745f5dae3f2cf72308ad59efd25e665bdf9ff0363677d3e0bc1abf3e7"
+        },
+        {
+          "path": "skills/automatic-api-design/skill.json",
+          "sha256": "562a0fc122ef00ad68034ffb75137d2288a18da5f258af98b2c82ebbf2bccd9a"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "automatic-code-review",
+      "root": "skills/automatic-code-review",
+      "files": [
+        {
+          "path": "skills/automatic-code-review/SKILL.md",
+          "sha256": "b9f7741662bbfdd9ad30fc150a2ec3c1b6ff071467500a8326347bb037eb62f3"
+        },
+        {
+          "path": "skills/automatic-code-review/skill.json",
+          "sha256": "dec86666dc963ee49c6c49d992f5546a036e7e94791e2c81dc382a1b561029cd"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "automatic-database-design",
+      "root": "skills/automatic-database-design",
+      "files": [
+        {
+          "path": "skills/automatic-database-design/SKILL.md",
+          "sha256": "f7a3e219950ae2969c55f5054c6f953a957b3cd690db841762996df5a378ec6b"
+        },
+        {
+          "path": "skills/automatic-database-design/skill.json",
+          "sha256": "716bad05066a31e70e40d4a87f898f2a7b0052e9cc1c8d182d6a2dbe12e74a6c"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "automatic-debugging",
+      "root": "skills/automatic-debugging",
+      "files": [
+        {
+          "path": "skills/automatic-debugging/SKILL.md",
+          "sha256": "56a328df6b1c231adb2b2c26c923dc2f0fd87224f51cd6b4969c3989ee7d8c84"
+        },
+        {
+          "path": "skills/automatic-debugging/skill.json",
+          "sha256": "8346584a3a34b960a6af801e15d89ebf58ca949e8770dbe37c34039a54fe7903"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "automatic-documentation",
+      "root": "skills/automatic-documentation",
+      "files": [
+        {
+          "path": "skills/automatic-documentation/SKILL.md",
+          "sha256": "2a0ee2b3c6e8f6569912fc8b02b773628904891a2f80775e569830112e14abd8"
+        },
+        {
+          "path": "skills/automatic-documentation/skill.json",
+          "sha256": "d0c479a7ffb68840a0ba83f9d013358b8f9ad25f79332759396f9e1bc19f2b92"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "automatic-features",
+      "root": "skills/automatic-features",
+      "files": [
+        {
+          "path": "skills/automatic-features/SKILL.md",
+          "sha256": "42b10a47e7bf0e92958dce991b974b470b75e7376c3765ab5381747ee1ac66c7"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "automatic-llms-txt",
+      "root": "skills/automatic-llms-txt",
+      "files": [
+        {
+          "path": "skills/automatic-llms-txt/SKILL.md",
+          "sha256": "1494a94f2e01b9ae83c48adff96f8d4c4175c7a10a81b9700be8c330c4cb1ba6"
+        },
+        {
+          "path": "skills/automatic-llms-txt/skill.json",
+          "sha256": "14d60c2b7147bc4fb77fd0812b49c1d41d432b055c5bd338e1e6c01231eb01a6"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "automatic-performance",
+      "root": "skills/automatic-performance",
+      "files": [
+        {
+          "path": "skills/automatic-performance/SKILL.md",
+          "sha256": "227c5f4d3a6daed99d389ab3296ff0849a357b84e516c4a4cfdb27c30d7178af"
+        },
+        {
+          "path": "skills/automatic-performance/skill.json",
+          "sha256": "afcf248e26ec161bfd7f754cf1ac6a1732be672a0abb951e5cbf0915f0dd70f2"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "automatic-refactoring",
+      "root": "skills/automatic-refactoring",
+      "files": [
+        {
+          "path": "skills/automatic-refactoring/SKILL.md",
+          "sha256": "3c5536da5a3b124164f1e345be15c400256cc550fc071173cf7b08613f2b5e71"
+        },
+        {
+          "path": "skills/automatic-refactoring/skill.json",
+          "sha256": "1899def7474cdb60b6bb31feacb2e64555e4d26cb8ff1adda699cbdbf73da897"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "automatic-remote-source-authoring",
+      "root": "skills/automatic-remote-source-authoring",
+      "files": [
+        {
+          "path": "skills/automatic-remote-source-authoring/SKILL.md",
+          "sha256": "2abe73809fe01032b0dea693dfb51d2e90e2105c7b9a391d4ef81a6f460991b0"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "automatic-security-review",
+      "root": "skills/automatic-security-review",
+      "files": [
+        {
+          "path": "skills/automatic-security-review/SKILL.md",
+          "sha256": "8f27e498be1d824da25892c2901f83873d38f86ab547623c55fed75f54e80b92"
+        },
+        {
+          "path": "skills/automatic-security-review/skill.json",
+          "sha256": "6b780da1aa468f19f152f2d4f4ae5296df1b0095a28ded7c2a2814efdfb5f7f5"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "automatic-testing",
+      "root": "skills/automatic-testing",
+      "files": [
+        {
+          "path": "skills/automatic-testing/SKILL.md",
+          "sha256": "3aed203b86b66e111996aac4b355678ae8a9763df6f712109a028dc86408a876"
+        },
+        {
+          "path": "skills/automatic-testing/skill.json",
+          "sha256": "eaab076c0942e77ad02e03f083a59ecd42f317f8b0b3dfcee1415b04618b1d99"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "claude-4-7",
+      "root": "skills/claude-4-7",
+      "files": [
+        {
+          "path": "skills/claude-4-7/SKILL.md",
+          "sha256": "20898c4d9b7770df2a4ba0bdfcd26c5f2af7016fa227b6c69d063fbf8ec0744a"
+        },
+        {
+          "path": "skills/claude-4-7/skill.json",
+          "sha256": "ed788bef6468da5bb5e513cf15b3ee83161735d81daacaff0f78f0104f0b5aeb"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "laravel-specialist",
+      "root": "skills/laravel-specialist",
+      "files": [
+        {
+          "path": "skills/laravel-specialist/SKILL.md",
+          "sha256": "85d4eb0ecbed8ad55a345e7dcc29e88d94b2870e7889c73333b8e7ffc9bf4357"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "pennant-development",
+      "root": "skills/pennant-development",
+      "files": [
+        {
+          "path": "skills/pennant-development/SKILL.md",
+          "sha256": "c6ab488198f88d5455b56886c59bf8d96d1b309cc30ad2f20ac1abd6c8d2f7d8"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "php-pro",
+      "root": "skills/php-pro",
+      "files": [
+        {
+          "path": "skills/php-pro/SKILL.md",
+          "sha256": "e845f06f4bd60f749a254896d5414c2abfd111f470db9111b5279973cb224705"
+        },
+        {
+          "path": "skills/php-pro/references/async-patterns.md",
+          "sha256": "3d75c066c70ba0fe18c7e3ccb1063953fc910ee71952a85e04d3ef62492c67a6"
+        },
+        {
+          "path": "skills/php-pro/references/laravel-patterns.md",
+          "sha256": "39c4e9e9e564a0fcbc1d6bf34dce0fd2e3568f5fca75d40921e7f2eacf6f3a39"
+        },
+        {
+          "path": "skills/php-pro/references/modern-php-features.md",
+          "sha256": "04a6a64dad160622eb1f8465e842681aad8c97261f39383195566aac59fae159"
+        },
+        {
+          "path": "skills/php-pro/references/symfony-patterns.md",
+          "sha256": "fa9f01da37e3f0d1981e5ec3af3ea51edf20d4f1ea6e3f85f436ca73ee5a2ba2"
+        },
+        {
+          "path": "skills/php-pro/references/testing-quality.md",
+          "sha256": "922245444396b5f2aebf1eda3825d616de1f879cd6413d86e9eb30f06c041de0"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "python-pro",
+      "root": "skills/python-pro",
+      "files": [
+        {
+          "path": "skills/python-pro/SKILL.md",
+          "sha256": "1c966b686afcaaad5b7ad60554e3fbf334c34e4937d58d174164ff0c061837c7"
+        },
+        {
+          "path": "skills/python-pro/references/async-patterns.md",
+          "sha256": "b7986eb185a4858de3edcb27f537a38d351d3017fdbcac3ba2d905d30ba1cb64"
+        },
+        {
+          "path": "skills/python-pro/references/packaging.md",
+          "sha256": "483d0a257907d2e17ce1cf2e3e7b8b2af88f9eb17fa3a9c4bcc04aa60e930ae3"
+        },
+        {
+          "path": "skills/python-pro/references/standard-library.md",
+          "sha256": "d2997c8f9a491561947c95a182e09b2d584d828d26cb04eb42a194fa4393c6ce"
+        },
+        {
+          "path": "skills/python-pro/references/testing.md",
+          "sha256": "81c8bc148eaf7d32e51171c997016c7deda140b71d6253b15b63b10f038f3c28"
+        },
+        {
+          "path": "skills/python-pro/references/type-system.md",
+          "sha256": "62c4474c4ed29a18fd64002a356cba0239785f68c8530109c74c5bb3162b021b"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "tailwindcss-development",
+      "root": "skills/tailwindcss-development",
+      "files": [
+        {
+          "path": "skills/tailwindcss-development/SKILL.md",
+          "sha256": "fe8a9ebfbf6743814add96503d28fc084245a1734d044f29a7f1f91920bfb2eb"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "terraform-skill",
+      "root": "skills/terraform-skill",
+      "files": [
+        {
+          "path": "skills/terraform-skill/SKILL.md",
+          "sha256": "3d92521c1aea650e218ba197e073acef4ac69ff0b4f15b9103eb0a3bdda1a104"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
+      "id": "vercel-react-best-practices",
+      "root": "skills/vercel-react-best-practices",
+      "files": [
+        {
+          "path": "skills/vercel-react-best-practices/SKILL.md",
+          "sha256": "61860fd4249cf5e5ec917a08aceebed48ccf9b38d526e3cb73e0b18aaf261dac"
+        }
+      ]
+    },
+    {
+      "kind": "manifest-fragment",
+      "id": "skill",
+      "path": "skills/skill.json",
+      "sha256": "d250db9527627b4bbf91a2af27f156045167f408f5149444cfc76b94665035c4"
+    },
+    {
+      "kind": "rule",
+      "pack": "automatic",
+      "id": "agent-guidance",
+      "path": "rules/automatic/agent-guidance.md",
+      "sha256": "892aa11f6118d665bb19a0ee5e7b8e403fc840679a8e8289890ae7a07acb26a5"
+    },
+    {
+      "kind": "rule",
+      "pack": "automatic",
+      "id": "automatic-service",
+      "path": "rules/automatic/automatic-service.md",
+      "sha256": "a0fa641ee6b0bc2fed8150bb9a7b6834e7e6b5a68209d6f355a4e3d2a4fe2849"
+    },
+    {
+      "kind": "rule",
+      "pack": "automatic",
+      "id": "code-style",
+      "path": "rules/automatic/code-style.md",
+      "sha256": "c0c6c226a2bad7c287f2ee3a6f5e8be776fd42cb2166c855f01a62c3e726234a"
+    },
+    {
+      "kind": "rule",
+      "pack": "automatic",
+      "id": "general",
+      "path": "rules/automatic/general.md",
+      "sha256": "40ae346c78f624f228ad805f71559028052799451c1891e8d7068e2c4051c87e"
+    },
+    {
+      "kind": "rule",
+      "pack": "automatic",
+      "id": "gitignore",
+      "path": "rules/automatic/gitignore.md",
+      "sha256": "9a57cbefdf71bbfc571211383469962f5402328393d306ed8d6726a4596c2586"
+    },
+    {
+      "kind": "rule",
+      "pack": "automatic",
+      "id": "guardrails",
+      "path": "rules/automatic/guardrails.md",
+      "sha256": "c28656290248da337e7301a0db88db5ded7451c495e2b264a15c147d49982911"
+    },
+    {
+      "kind": "rule",
+      "pack": "automatic",
+      "id": "process",
+      "path": "rules/automatic/process.md",
+      "sha256": "e7a1f528c62c4ad6ed4d6fb0a45cdb1e2aa148218ec2efc2bfce2e16d17a8524"
+    },
+    {
+      "kind": "rule",
+      "pack": "automatic",
+      "id": "prose",
+      "path": "rules/automatic/prose.md",
+      "sha256": "8ca274cff2076b63c7ce380cf6e1ce0acc1289676fa5d988fe1ebd563fcb8aa0"
+    },
+    {
+      "kind": "rule",
+      "pack": "common-docs",
+      "id": "documentation",
+      "path": "rules/common-docs/documentation.md",
+      "sha256": "acb440a0979330cdbd0cc53a5a169edd745e5a37eced87253bbab9f12880bd40"
+    },
+    {
+      "kind": "instruction",
+      "id": "Agent Project Brief",
+      "path": "instructions/Agent Project Brief.md",
+      "sha256": "422f0e0fe7759848cc0e3acc26acd68ce288e589624d5c262f6f00db775af962"
+    },
+    {
+      "kind": "instruction",
+      "id": "Session Context",
+      "path": "instructions/Session Context.md",
+      "sha256": "cc1dae19c2f1b74e666ba557b09dd03ed6ee2c91f55aadb1fff6f2aca291d8e9"
+    },
+    {
+      "kind": "subagent",
+      "pack": "automatic",
+      "id": "code-reviewer",
+      "path": "subagents/automatic/code-reviewer.md",
+      "sha256": "8ca56bf4a744e3086f3026bf6265e9637b2f2c720baf2379b821942fb4d15fe7"
+    },
+    {
+      "kind": "subagent",
+      "pack": "automatic",
+      "id": "debugger",
+      "path": "subagents/automatic/debugger.md",
+      "sha256": "d005f1927ecf75506bd50261c7a7c565178d1cab596a2c4b5c4db528b4433729"
+    },
+    {
+      "kind": "subagent",
+      "pack": "automatic",
+      "id": "planner",
+      "path": "subagents/automatic/planner.md",
+      "sha256": "d2f5c04ba065a2cb9ae5804de73f9993ef9efc52e36cffba006d765b4352d569"
+    }
+  ]
+}
