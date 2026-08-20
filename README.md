@@ -62,12 +62,6 @@ Rules are self-contained markdown blocks that Automatic composes into an agent's
 | [`process`](rules/automatic/process.md) | A seven-phase problem-solving process: understand, context, plan, communicate, implement, verify, summarise. |
 | [`prose`](rules/automatic/prose.md) | Rules for writing prose that humans read: short sentences, one idea each, no em-dashes, no meta-narration, plain words. |
 
-**`common-docs` pack** — rules that apply when writing documentation.
-
-| Rule | What it says |
-|---|---|
-| [`documentation`](rules/common-docs/documentation.md) | Structure, tone, and layout for files in a project's `docs/` directory. |
-
 ### Instructions
 
 Project instruction templates. A user copies one into a new project as its `CLAUDE.md` or equivalent and fills in the placeholders.

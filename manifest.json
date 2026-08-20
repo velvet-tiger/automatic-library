@@ -267,13 +267,6 @@
       "sha256": "8ca274cff2076b63c7ce380cf6e1ce0acc1289676fa5d988fe1ebd563fcb8aa0"
     },
     {
-      "kind": "rule",
-      "pack": "common-docs",
-      "id": "documentation",
-      "path": "rules/common-docs/documentation.md",
-      "sha256": "acb440a0979330cdbd0cc53a5a169edd745e5a37eced87253bbab9f12880bd40"
-    },
-    {
       "kind": "instruction",
       "id": "Agent Project Brief",
       "path": "instructions/Agent Project Brief.md",
