@@ -1,8 +1,8 @@
 {
   "$schema": "https://skills.json.org/schema/1.0.0/skills.schema.json",
   "name": "automatic-skills",
-  "version": "1.1.0",
-  "description": "Skills bundled with the Automatic desktop app. Covers general engineering practice (API design, code review, database design, debugging, documentation, llms.txt, performance, refactoring, security review, testing) and specific stacks (Laravel, Laravel Pennant, PHP, Python, Tailwind CSS, Terraform, React and Next.js).",
+  "version": "1.0.0",
+  "description": "Skills authored by Automatic for use with the Automatic desktop app. Covers general engineering practice (API design, code review, database design, debugging, documentation, llms.txt, performance, refactoring, security review, testing), skill and remote-source authoring, and Claude 4.7 collaboration patterns.",
   "author": {
     "name": "Automatic",
     "url": "https://github.com/velvet-tiger/automatic"
@@ -112,55 +112,6 @@
       "description": "Voice, intellectual honesty, and collaboration patterns for Claude 4.7. Show reasoning as a shared path, bring your actual voice, and hold your views under pressure. Use as the default posture for substantive back-and-forth work.",
       "category": "development",
       "tags": ["claude", "voice", "collaboration", "reasoning", "behaviour"]
-    },
-    {
-      "name": "laravel-specialist",
-      "path": "./laravel-specialist",
-      "description": "Building Laravel 10+ applications. Eloquent ORM, API resources, queue systems, Livewire components, Sanctum authentication, Horizon queues.",
-      "category": "framework",
-      "tags": ["laravel", "php", "eloquent", "livewire", "sanctum", "horizon", "queues"]
-    },
-    {
-      "name": "pennant-development",
-      "path": "./pennant-development",
-      "description": "Managing feature flags with Laravel Pennant. Toggling features conditionally, implementing A/B tests, working with the @feature directive, running gradual rollouts.",
-      "category": "framework",
-      "tags": ["laravel", "pennant", "feature-flags", "feature-toggles", "ab-testing", "rollouts"]
-    },
-    {
-      "name": "php-pro",
-      "path": "./php-pro",
-      "description": "Building PHP applications with modern PHP 8.3+ features. Strict typing, PHPStan level 9, async patterns with Swoole, PSR standards.",
-      "category": "language",
-      "tags": ["php", "php-8", "strict-typing", "phpstan", "psr", "swoole", "async"]
-    },
-    {
-      "name": "python-pro",
-      "path": "./python-pro",
-      "description": "Building Python 3.11+ applications requiring type safety, async programming, or production-grade patterns. Type hints, pytest, async/await, dataclasses, mypy configuration.",
-      "category": "language",
-      "tags": ["python", "python-3", "type-hints", "mypy", "pytest", "async", "dataclasses"]
-    },
-    {
-      "name": "tailwindcss-development",
-      "path": "./tailwindcss-development",
-      "description": "Styling applications with Tailwind CSS v3 utilities. Layout, flex, grid, responsive design, dark mode, colours, typography, borders.",
-      "category": "framework",
-      "tags": ["tailwind", "tailwindcss", "css", "styling", "responsive", "dark-mode", "utility-classes"]
-    },
-    {
-      "name": "terraform-skill",
-      "path": "./terraform-skill",
-      "description": "Working with Terraform and OpenTofu. Creating modules, writing tests with the native test framework and Terratest, setting up CI/CD pipelines, security scanning with trivy and checkov, debugging state issues.",
-      "category": "infrastructure",
-      "tags": ["terraform", "opentofu", "iac", "modules", "terratest", "trivy", "checkov", "ci-cd"]
-    },
-    {
-      "name": "vercel-react-best-practices",
-      "path": "./vercel-react-best-practices",
-      "description": "React and Next.js performance optimisation patterns from Vercel Engineering. Component design, data fetching, bundle optimisation.",
-      "category": "framework",
-      "tags": ["react", "nextjs", "vercel", "performance", "optimisation", "components", "bundle"]
     }
   ]
 }

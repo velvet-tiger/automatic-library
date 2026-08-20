@@ -26,8 +26,6 @@ Automatic manages this for you across every agent you use, keeps everything in s
 
 Skills teach an agent how to approach a category of work. Each one is a self-contained markdown file with a description in its frontmatter that agents use to decide when to activate it.
 
-**Engineering practice** — general-purpose skills covering how to think about the work.
-
 | Skill | What it covers |
 |---|---|
 | [`automatic`](skills/automatic/) | How to use the Automatic MCP service. Skill discovery, memory, project config, and session management. Activate at the start of every session in a project managed by Automatic. |
@@ -45,17 +43,7 @@ Skills teach an agent how to approach a category of work. Each one is a self-con
 | [`automatic-remote-source-authoring`](skills/automatic-remote-source-authoring/) | How to publish resources through Automatic's remote-source system. `automatic.json` manifests, `skill.json` references, collections, badges, and directory structure. |
 | [`claude-4-7`](skills/claude-4-7/) | Voice, intellectual honesty, and collaboration patterns for Claude 4.7. A posture for substantive back-and-forth work. |
 
-**Frameworks and languages** — skills contributed by the community and by upstream vendors, covering specific stacks.
-
-| Skill | What it covers |
-|---|---|
-| [`laravel-specialist`](skills/laravel-specialist/) | Laravel 10+ applications. Eloquent ORM, API resources, queue systems, Livewire components, Sanctum authentication, Horizon queues. |
-| [`pennant-development`](skills/pennant-development/) | Feature flags with Laravel Pennant. Toggling, conditional rendering, A/B tests, gradual rollouts. |
-| [`php-pro`](skills/php-pro/) | Modern PHP 8.3+ applications. Strict typing, PHPStan level 9, async patterns with Swoole, PSR standards. |
-| [`python-pro`](skills/python-pro/) | Python 3.11+ applications. Type hints, pytest, async/await, dataclasses, mypy configuration. |
-| [`tailwindcss-development`](skills/tailwindcss-development/) | Styling with Tailwind CSS v3 utilities. Layout, responsive design, dark mode, typography, colours. |
-| [`terraform-skill`](skills/terraform-skill/) | Terraform and OpenTofu. Modules, native test framework and Terratest, CI/CD, security scanning, state debugging. |
-| [`vercel-react-best-practices`](skills/vercel-react-best-practices/) | React and Next.js performance patterns from Vercel Engineering. Component design, data fetching, bundle optimisation. |
+Third-party skills that the Automatic app also installs by default (Laravel, PHP, Python, Tailwind CSS, Terraform, Vercel/React, Laravel Pennant) are shipped by the app itself, not by this repository.
 
 ### Rules
 
