@@ -325,7 +325,7 @@
       "kind": "manifest-fragment",
       "id": "skill",
       "path": "skills/skill.json",
-      "sha256": "d250db9527627b4bbf91a2af27f156045167f408f5149444cfc76b94665035c4"
+      "sha256": "d97fdb2af0522a3a594d82230d1434eb5f2832fb55f7e4ecac1772a7bdb67da7"
     },
     {
       "kind": "rule",
