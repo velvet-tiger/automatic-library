@@ -187,50 +187,50 @@
     {
       "kind": "rule",
       "pack": "automatic",
-      "id": "agent-guidance",
-      "path": "rules/automatic/agent-guidance.md",
+      "id": "automatic-agent-guidance",
+      "path": "rules/automatic/automatic-agent-guidance.md",
       "sha256": "892aa11f6118d665bb19a0ee5e7b8e403fc840679a8e8289890ae7a07acb26a5"
     },
     {
       "kind": "rule",
       "pack": "automatic",
-      "id": "code-style",
-      "path": "rules/automatic/code-style.md",
+      "id": "automatic-code-style",
+      "path": "rules/automatic/automatic-code-style.md",
       "sha256": "c0c6c226a2bad7c287f2ee3a6f5e8be776fd42cb2166c855f01a62c3e726234a"
     },
     {
       "kind": "rule",
       "pack": "automatic",
-      "id": "general",
-      "path": "rules/automatic/general.md",
+      "id": "automatic-general",
+      "path": "rules/automatic/automatic-general.md",
       "sha256": "40ae346c78f624f228ad805f71559028052799451c1891e8d7068e2c4051c87e"
     },
     {
       "kind": "rule",
       "pack": "automatic",
-      "id": "gitignore",
-      "path": "rules/automatic/gitignore.md",
+      "id": "automatic-gitignore",
+      "path": "rules/automatic/automatic-gitignore.md",
       "sha256": "9a57cbefdf71bbfc571211383469962f5402328393d306ed8d6726a4596c2586"
     },
     {
       "kind": "rule",
       "pack": "automatic",
-      "id": "guardrails",
-      "path": "rules/automatic/guardrails.md",
+      "id": "automatic-guardrails",
+      "path": "rules/automatic/automatic-guardrails.md",
       "sha256": "c28656290248da337e7301a0db88db5ded7451c495e2b264a15c147d49982911"
     },
     {
       "kind": "rule",
       "pack": "automatic",
-      "id": "process",
-      "path": "rules/automatic/process.md",
+      "id": "automatic-process",
+      "path": "rules/automatic/automatic-process.md",
       "sha256": "e7a1f528c62c4ad6ed4d6fb0a45cdb1e2aa148218ec2efc2bfce2e16d17a8524"
     },
     {
       "kind": "rule",
       "pack": "automatic",
-      "id": "prose",
-      "path": "rules/automatic/prose.md",
+      "id": "automatic-prose",
+      "path": "rules/automatic/automatic-prose.md",
       "sha256": "8ca274cff2076b63c7ce380cf6e1ce0acc1289676fa5d988fe1ebd563fcb8aa0"
     },
     {

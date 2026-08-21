@@ -35,9 +35,9 @@ scripts/build-manifest.mjs       # walks the tree, rebuilds manifest.json
 Naming conventions:
 
 - **Skill id** = the directory name. Lowercase, hyphen-separated. Must be unique across the library.
-- **Rule pack** = the parent directory under `rules/`. **Rule id** = the filename stem. The Automatic app usually surfaces rules as `{pack}-{id}` (for example `automatic-guardrails`).
+- **Rule pack** = the parent directory under `rules/`. **Rule filename** must begin with the pack name (`automatic-guardrails.md` in the `automatic` pack). The filename stem is the rule's id verbatim; the app installs the file as-is without any renaming. This keeps the installed name self-describing across every project that consumes the rule.
 - **Instruction id** = the filename stem, spaces allowed (`Agent Project Brief`).
-- **Subagent pack** and **id** follow the rule convention.
+- **Subagent pack** = the parent directory under `subagents/`. Subagent filenames currently do not carry the pack prefix; this is under review.
 - **Hook id** = the filename stem.
 
 ## Retiring an asset
