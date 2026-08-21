@@ -22,6 +22,23 @@ Automatic manages this for you across every agent you use, keeps everything in s
 
 ## What is in this repository
 
+### Rules
+
+Rules are self-contained markdown blocks that Automatic composes into an agent's instruction file (`CLAUDE.md`, `AGENTS.md`, `.cursorrules`, or the equivalent). Each rule is one file; a pack is a directory of related rules.
+
+**`automatic` pack** — the default rule set Automatic installs into every managed project.
+
+These are the most useful part of this repository. These rules are tested and proven to work well together across coding agents, and will significantly improve your results.
+
+| Rule | What it says |
+|---|---|
+| [`general`](rules/automatic/general.md) | The Constitution for AI coding agents. Twenty rules preventing common failure modes (no aimless loops, confirm before creation, respect local context, report state truthfully), concrete do/don't guidance for a session, and the voice the agent should bring to substantive work. |
+| [`code`](rules/automatic/code.md) | Named stopping-points where a bad pattern is about to be written, paired with the pattern that should take its place. Explicit typing, composition over inheritance, dependency injection, error handling with context, idempotency, security-aware defaults, and more. |
+| [`process`](rules/automatic/process.md) | A seven-phase problem-solving process: understand, context, plan, communicate, implement, verify, summarise. Includes a mandatory stop before the first mutating tool call. |
+| [`prose`](rules/automatic/prose.md) | Rules for writing prose that humans read, including chat replies: short sentences, one idea each, no em-dashes, no meta-narration, plain words. |
+| [`gitignore`](rules/automatic/gitignore.md) | The block Automatic writes into a project's `.gitignore` to keep managed agent config out of version control. |
+
+
 ### Skills
 
 Skills teach an agent how to approach a category of work. Each one is a self-contained markdown file with a description in its frontmatter that agents use to decide when to activate it.
@@ -39,23 +56,8 @@ Skills teach an agent how to approach a category of work. Each one is a self-con
 | [`automatic-security-review`](skills/automatic-security-review/) | Security review checklist and threat mindset for any codebase. |
 | [`automatic-testing`](skills/automatic-testing/) | Principles and patterns for writing effective unit, integration, and end-to-end tests. |
 | [`automatic-remote-source-authoring`](skills/automatic-remote-source-authoring/) | How to publish resources through Automatic's remote-source system. `automatic.json` manifests, `skill.json` references, collections, badges, and directory structure. |
-| [`claude-4-7`](skills/claude-4-7/) | Voice, intellectual honesty, and collaboration patterns for Claude 4.7. A posture for substantive back-and-forth work. |
 
 Third-party skills that the Automatic app also installs by default (Laravel, PHP, Python, Tailwind CSS, Terraform, Vercel/React, Laravel Pennant) are shipped by the app itself, not by this repository.
-
-### Rules
-
-Rules are self-contained markdown blocks that Automatic composes into an agent's instruction file (`CLAUDE.md`, `AGENTS.md`, `.cursorrules`, or the equivalent). Each rule is one file; a pack is a directory of related rules.
-
-**`automatic` pack** — the default rule set Automatic installs into every managed project.
-
-| Rule | What it says |
-|---|---|
-| [`general`](rules/automatic/general.md) | The Constitution for AI coding agents. Twenty rules preventing common failure modes (no aimless loops, confirm before creation, respect local context, report state truthfully), concrete do/don't guidance for a session, and the voice the agent should bring to substantive work. |
-| [`code`](rules/automatic/code.md) | Named stopping-points where a bad pattern is about to be written, paired with the pattern that should take its place. Explicit typing, composition over inheritance, dependency injection, error handling with context, idempotency, security-aware defaults, and more. |
-| [`process`](rules/automatic/process.md) | A seven-phase problem-solving process: understand, context, plan, communicate, implement, verify, summarise. Includes a mandatory stop before the first mutating tool call. |
-| [`prose`](rules/automatic/prose.md) | Rules for writing prose that humans read, including chat replies: short sentences, one idea each, no em-dashes, no meta-narration, plain words. |
-| [`gitignore`](rules/automatic/gitignore.md) | The block Automatic writes into a project's `.gitignore` to keep managed agent config out of version control. |
 
 ### Instructions
 

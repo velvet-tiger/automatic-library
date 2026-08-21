@@ -164,25 +164,10 @@
       ]
     },
     {
-      "kind": "skill",
-      "id": "claude-4-7",
-      "root": "skills/claude-4-7",
-      "files": [
-        {
-          "path": "skills/claude-4-7/SKILL.md",
-          "sha256": "20898c4d9b7770df2a4ba0bdfcd26c5f2af7016fa227b6c69d063fbf8ec0744a"
-        },
-        {
-          "path": "skills/claude-4-7/skill.json",
-          "sha256": "ed788bef6468da5bb5e513cf15b3ee83161735d81daacaff0f78f0104f0b5aeb"
-        }
-      ]
-    },
-    {
       "kind": "manifest-fragment",
       "id": "skill",
       "path": "skills/skill.json",
-      "sha256": "e7fd02935a1337f36a5955e8d24cdcb536fc7dca519e81d1b6f1235a4949072b"
+      "sha256": "5bf298f261cf1a6b8b754dff34e2d98dda6a731492f263bc562b06ffd520675f"
     },
     {
       "kind": "rule",
