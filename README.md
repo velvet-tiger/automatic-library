@@ -28,8 +28,6 @@ Skills teach an agent how to approach a category of work. Each one is a self-con
 
 | Skill | What it covers |
 |---|---|
-| [`automatic`](skills/automatic/) | How to use the Automatic MCP service. Skill discovery, memory, project config, and session management. Activate at the start of every session in a project managed by Automatic. |
-| [`automatic-features`](skills/automatic-features/) | Automatic's feature-tracking system. Creating, progressing, and updating per-project work items through MCP. |
 | [`automatic-api-design`](skills/automatic-api-design/) | REST API design conventions, error shapes, versioning, and pagination patterns. |
 | [`automatic-code-review`](skills/automatic-code-review/) | How to conduct and receive effective code reviews. |
 | [`automatic-database-design`](skills/automatic-database-design/) | Schema design, normalisation, indexing, and migration practice for relational databases. |
@@ -54,7 +52,6 @@ Rules are self-contained markdown blocks that Automatic composes into an agent's
 | Rule | What it says |
 |---|---|
 | [`agent-guidance`](rules/automatic/agent-guidance.md) | What the agent should do, what it must not do, and the workflow for a session. |
-| [`automatic-service`](rules/automatic/automatic-service.md) | How an agent should use the Automatic MCP service through a session. Which tools to call at start, during work, and at end. |
 | [`code-style`](rules/automatic/code-style.md) | Good coding patterns: explicit typing, composition over inheritance, dependency injection, error handling with context, idempotency, security-aware defaults. |
 | [`general`](rules/automatic/general.md) | The Constitution for AI coding agents. Rules to prevent common failure modes: no aimless loops, confirm before creation, respect local context, report state truthfully. |
 | [`gitignore`](rules/automatic/gitignore.md) | The block Automatic writes into a project's `.gitignore` to keep managed agent config out of version control. |

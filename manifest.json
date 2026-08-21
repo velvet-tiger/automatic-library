@@ -4,21 +4,6 @@
   "assets": [
     {
       "kind": "skill",
-      "id": "automatic",
-      "root": "skills/automatic",
-      "files": [
-        {
-          "path": "skills/automatic/SKILL.md",
-          "sha256": "8a685653173ff2973b135115de31acce1529919e8d0368d609f71251707cab2a"
-        },
-        {
-          "path": "skills/automatic/skill.json",
-          "sha256": "2d94a3196e68d64e950761fececafba66de83fdba8dd00f4908c1746b5eef6a6"
-        }
-      ]
-    },
-    {
-      "kind": "skill",
       "id": "automatic-api-design",
       "root": "skills/automatic-api-design",
       "files": [
@@ -89,17 +74,6 @@
         {
           "path": "skills/automatic-documentation/skill.json",
           "sha256": "d0c479a7ffb68840a0ba83f9d013358b8f9ad25f79332759396f9e1bc19f2b92"
-        }
-      ]
-    },
-    {
-      "kind": "skill",
-      "id": "automatic-features",
-      "root": "skills/automatic-features",
-      "files": [
-        {
-          "path": "skills/automatic-features/SKILL.md",
-          "sha256": "42b10a47e7bf0e92958dce991b974b470b75e7376c3765ab5381747ee1ac66c7"
         }
       ]
     },
@@ -208,7 +182,7 @@
       "kind": "manifest-fragment",
       "id": "skill",
       "path": "skills/skill.json",
-      "sha256": "b6e542b5afd84f0387a5fbca929690c062ff4e5caac2dcf71030e4ad7f21d909"
+      "sha256": "e7fd02935a1337f36a5955e8d24cdcb536fc7dca519e81d1b6f1235a4949072b"
     },
     {
       "kind": "rule",
@@ -216,13 +190,6 @@
       "id": "agent-guidance",
       "path": "rules/automatic/agent-guidance.md",
       "sha256": "892aa11f6118d665bb19a0ee5e7b8e403fc840679a8e8289890ae7a07acb26a5"
-    },
-    {
-      "kind": "rule",
-      "pack": "automatic",
-      "id": "automatic-service",
-      "path": "rules/automatic/automatic-service.md",
-      "sha256": "a0fa641ee6b0bc2fed8150bb9a7b6834e7e6b5a68209d6f355a4e3d2a4fe2849"
     },
     {
       "kind": "rule",
