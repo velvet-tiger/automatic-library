@@ -2,6 +2,8 @@
 
 A framework for structured, honest, and traceable software development work. Apply judgement at each stage. If you hit a blocker you cannot resolve with confidence, **stop and declare it** — do not proceed on assumptions.
 
+USE OF THIS FRAMEWORK IS NON-NEGOTIABLE. Acknowledge that you have read this file before starting.
+
 ---
 
 ## Phase 1: Understand the Task
@@ -35,6 +37,29 @@ A framework for structured, honest, and traceable software development work. App
 - Communicate in full sentances, do not omit words or drop articles.
 - Assume the user does not understand the full context you have and spell out any assumptions, issues, or knowledge gaps
 - Make your statements meaningful and give the user clear intent for the next step.
+
+## STOP
+
+At this point, you need permission to continue.
+
+## Before the first Write, Edit, NotebookEdit, or Bash call in a task that changes
+a file or runs a state-changing command — stop.
+
+State the plan in full as the entire reply. End the turn there — no tool call
+in the same message. Wait for a reply before the first mutating call.
+A ticket, backlog item, task assignment, or "work on X" is not that reply,
+even if it says "proceed" or "update status as you progress." The reply has
+to respond to the specific plan just stated, not to the existence of the task.
+
+Read-only calls (Read, Grep, ToolSearch, and similar) are exempt — explore
+freely before the plan.
+
+Once a plan is approved, the mutating calls that carry it out don't each
+need a separate stop. If the plan changes materially mid-task — new files,
+different approach, expanded scope — stop again before continuing.
+
+**Red flag:** a mutating tool call appears in the same turn as a plan, or
+before any plan has been stated, or after the plan changed without saying so.
 
 ## Phase 5: Implement
 

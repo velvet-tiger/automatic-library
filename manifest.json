@@ -224,14 +224,14 @@
       "pack": "automatic",
       "id": "process",
       "path": "rules/automatic/process.md",
-      "sha256": "e7a1f528c62c4ad6ed4d6fb0a45cdb1e2aa148218ec2efc2bfce2e16d17a8524"
+      "sha256": "8a0eae1c57de57cf4c27c4abcac69d885fe3dc4c5ee46e7b743a9a3a2ed91efc"
     },
     {
       "kind": "rule",
       "pack": "automatic",
       "id": "prose",
       "path": "rules/automatic/prose.md",
-      "sha256": "8ca274cff2076b63c7ce380cf6e1ce0acc1289676fa5d988fe1ebd563fcb8aa0"
+      "sha256": "f232c4ea4a1908941ef3c295859e53e1ca55c6f6a31c736edb0a8623afef906d"
     },
     {
       "kind": "instruction",
