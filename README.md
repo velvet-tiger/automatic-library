@@ -51,13 +51,13 @@ Rules are self-contained markdown blocks that Automatic composes into an agent's
 
 | Rule | What it says |
 |---|---|
-| [`automatic-agent-guidance`](rules/automatic/automatic-agent-guidance.md) | What the agent should do, what it must not do, and the workflow for a session. |
-| [`automatic-code-style`](rules/automatic/automatic-code-style.md) | Good coding patterns: explicit typing, composition over inheritance, dependency injection, error handling with context, idempotency, security-aware defaults. |
-| [`automatic-general`](rules/automatic/automatic-general.md) | The Constitution for AI coding agents. Rules to prevent common failure modes: no aimless loops, confirm before creation, respect local context, report state truthfully. |
-| [`automatic-gitignore`](rules/automatic/automatic-gitignore.md) | The block Automatic writes into a project's `.gitignore` to keep managed agent config out of version control. |
-| [`automatic-guardrails`](rules/automatic/automatic-guardrails.md) | Named stopping-points where a bad pattern is about to be written. Each rule ends with the red flag that signals the moment. |
-| [`automatic-process`](rules/automatic/automatic-process.md) | A seven-phase problem-solving process: understand, context, plan, communicate, implement, verify, summarise. |
-| [`automatic-prose`](rules/automatic/automatic-prose.md) | Rules for writing prose that humans read: short sentences, one idea each, no em-dashes, no meta-narration, plain words. |
+| [`agent-guidance`](rules/automatic/agent-guidance.md) | What the agent should do, what it must not do, and the workflow for a session. |
+| [`code-style`](rules/automatic/code-style.md) | Good coding patterns: explicit typing, composition over inheritance, dependency injection, error handling with context, idempotency, security-aware defaults. |
+| [`general`](rules/automatic/general.md) | The Constitution for AI coding agents. Rules to prevent common failure modes: no aimless loops, confirm before creation, respect local context, report state truthfully. |
+| [`gitignore`](rules/automatic/gitignore.md) | The block Automatic writes into a project's `.gitignore` to keep managed agent config out of version control. |
+| [`guardrails`](rules/automatic/guardrails.md) | Named stopping-points where a bad pattern is about to be written. Each rule ends with the red flag that signals the moment. |
+| [`process`](rules/automatic/process.md) | A seven-phase problem-solving process: understand, context, plan, communicate, implement, verify, summarise. |
+| [`prose`](rules/automatic/prose.md) | Rules for writing prose that humans read: short sentences, one idea each, no em-dashes, no meta-narration, plain words. |
 
 ### Instructions
 
