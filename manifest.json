@@ -187,13 +187,6 @@
     {
       "kind": "rule",
       "pack": "automatic",
-      "id": "agent-guidance",
-      "path": "rules/automatic/agent-guidance.md",
-      "sha256": "892aa11f6118d665bb19a0ee5e7b8e403fc840679a8e8289890ae7a07acb26a5"
-    },
-    {
-      "kind": "rule",
-      "pack": "automatic",
       "id": "code-style",
       "path": "rules/automatic/code-style.md",
       "sha256": "c0c6c226a2bad7c287f2ee3a6f5e8be776fd42cb2166c855f01a62c3e726234a"
@@ -203,7 +196,7 @@
       "pack": "automatic",
       "id": "general",
       "path": "rules/automatic/general.md",
-      "sha256": "40ae346c78f624f228ad805f71559028052799451c1891e8d7068e2c4051c87e"
+      "sha256": "7aa1abd4f961062e71d3deebca66af50d6e3a841a447d3527f53d49ad0d43f34"
     },
     {
       "kind": "rule",
