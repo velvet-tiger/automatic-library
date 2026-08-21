@@ -187,9 +187,9 @@
     {
       "kind": "rule",
       "pack": "automatic",
-      "id": "code-style",
-      "path": "rules/automatic/code-style.md",
-      "sha256": "c0c6c226a2bad7c287f2ee3a6f5e8be776fd42cb2166c855f01a62c3e726234a"
+      "id": "code",
+      "path": "rules/automatic/code.md",
+      "sha256": "e93b2b531dcbd5f8e779413e41ded69122f6735ae4bd9ee60405a98960078d22"
     },
     {
       "kind": "rule",
@@ -204,13 +204,6 @@
       "id": "gitignore",
       "path": "rules/automatic/gitignore.md",
       "sha256": "9a57cbefdf71bbfc571211383469962f5402328393d306ed8d6726a4596c2586"
-    },
-    {
-      "kind": "rule",
-      "pack": "automatic",
-      "id": "guardrails",
-      "path": "rules/automatic/guardrails.md",
-      "sha256": "c28656290248da337e7301a0db88db5ded7451c495e2b264a15c147d49982911"
     },
     {
       "kind": "rule",

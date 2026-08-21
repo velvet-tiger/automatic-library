@@ -51,12 +51,11 @@ Rules are self-contained markdown blocks that Automatic composes into an agent's
 
 | Rule | What it says |
 |---|---|
-| [`code-style`](rules/automatic/code-style.md) | Good coding patterns: explicit typing, composition over inheritance, dependency injection, error handling with context, idempotency, security-aware defaults. |
 | [`general`](rules/automatic/general.md) | The Constitution for AI coding agents. Twenty rules preventing common failure modes (no aimless loops, confirm before creation, respect local context, report state truthfully), concrete do/don't guidance for a session, and the voice the agent should bring to substantive work. |
+| [`code`](rules/automatic/code.md) | Named stopping-points where a bad pattern is about to be written, paired with the pattern that should take its place. Explicit typing, composition over inheritance, dependency injection, error handling with context, idempotency, security-aware defaults, and more. |
+| [`process`](rules/automatic/process.md) | A seven-phase problem-solving process: understand, context, plan, communicate, implement, verify, summarise. Includes a mandatory stop before the first mutating tool call. |
+| [`prose`](rules/automatic/prose.md) | Rules for writing prose that humans read, including chat replies: short sentences, one idea each, no em-dashes, no meta-narration, plain words. |
 | [`gitignore`](rules/automatic/gitignore.md) | The block Automatic writes into a project's `.gitignore` to keep managed agent config out of version control. |
-| [`guardrails`](rules/automatic/guardrails.md) | Named stopping-points where a bad pattern is about to be written. Each rule ends with the red flag that signals the moment. |
-| [`process`](rules/automatic/process.md) | A seven-phase problem-solving process: understand, context, plan, communicate, implement, verify, summarise. |
-| [`prose`](rules/automatic/prose.md) | Rules for writing prose that humans read: short sentences, one idea each, no em-dashes, no meta-narration, plain words. |
 
 ### Instructions
 

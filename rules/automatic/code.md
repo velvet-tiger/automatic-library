@@ -1,6 +1,6 @@
-# Engineering Guardrails
+# Code
 
-Each rule names a specific moment — the point where a bad pattern is about to be written, a false claim is about to be made, or a shortcut is about to be taken. When that moment arrives, stop and apply the rule. The red flag at the end of each rule is the signal that you're in that moment.
+Each rule names a specific moment — the point where a bad pattern is about to be written, a false claim is about to be made, or a shortcut is about to be taken. When that moment arrives, stop and apply the rule. Both the stop and the positive pattern that should replace it belong under each rule. The red flag at the end of each rule is the signal that you're in that moment.
 
 ## 1. Before you write `any`, `unknown` without narrowing, `mixed`, `object`, or an untyped parameter — stop.
 
@@ -70,7 +70,7 @@ Max-50 is not holy writ, but it's a signal. If your function's name is "processO
 
 ## 12. Before you write a comment — check if it restates the code.
 
-Comments explain *why* — a non-obvious constraint, a workaround for a specific bug, a hidden invariant, domain context that can't be encoded in a type. If removing the comment wouldn't confuse a future reader, delete it. Never write a comment that paraphrases the next line.
+Comments explain *why* — a non-obvious constraint, a workaround for a specific bug, a hidden invariant, domain context that can't be encoded in a type. Every public class and function is a place where a *why* comment belongs: purpose, inputs, outputs, side effects. Elsewhere, if removing the comment wouldn't confuse a future reader, delete it. Never write a comment that paraphrases the next line.
 
 **Red flag:** `// loop over users`, `// check if valid`, `// return the result`. Also: referring to the current task / fix / PR number — that rots the moment the code moves. Comments that note a task or ticket number for reference is okay.
 
