@@ -1,3 +1,32 @@
 {
-  "retired": []
+  "retired": [
+    {
+      "kind": "rule",
+      "pack": "automatic",
+      "id": "commands",
+      "retired_in": "0.1.0",
+      "reason": "Historical: pre-library-migration retirement of automatic-commands."
+    },
+    {
+      "kind": "rule",
+      "pack": "automatic",
+      "id": "code-style",
+      "retired_in": "0.1.0",
+      "reason": "Merged into automatic-code alongside automatic-guardrails."
+    },
+    {
+      "kind": "rule",
+      "pack": "automatic",
+      "id": "guardrails",
+      "retired_in": "0.1.0",
+      "reason": "Merged into automatic-code alongside automatic-code-style."
+    },
+    {
+      "kind": "rule",
+      "pack": "automatic",
+      "id": "agent-guidance",
+      "retired_in": "0.1.0",
+      "reason": "Merged into automatic-general."
+    }
+  ]
 }
