@@ -77,9 +77,11 @@ A hook is a JSON file that instructs an agent to run a command on a specific eve
 1. Bump `VERSION`.
 2. Run `node scripts/build-manifest.mjs` and commit the result.
 3. Tag `vX.Y.Z` and push.
-4. CI (to be added) builds `library-vX.Y.Z.tar.gz`, signs it, and publishes both as a GitHub Release asset.
+4. `.github/workflows/release.yml` verifies the tag matches `VERSION`, verifies `manifest.json` is up to date, builds `library-vX.Y.Z.zip`, signs it with minisign, and publishes the archive plus `.minisig` as a GitHub Release asset.
 
-Until CI exists, the release tarball is produced by hand and attached to the release manually.
+The signing keypair is generated once per project. See [KEYGEN.md](KEYGEN.md) for how to generate it, store the private key in Actions secrets, and hand the public key to the Automatic app.
+
+Pull requests are checked by `.github/workflows/pr.yml`, which fails the build when `manifest.json` is out of date with the tree.
 
 ## What not to put here
 

@@ -1,0 +1,38 @@
+name: PR
+
+# Runs on every pull request against `main`. Enforces one invariant:
+# whoever changed asset content also regenerated manifest.json.
+#
+# Silent manifest staleness would ship a library where the app's own
+# integrity check refuses to load newly-added or edited files (or
+# accepts a file whose sha256 is out of date).
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  manifest-parity:
+    name: manifest.json is up to date
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check out PR head
+        uses: actions/checkout@v4
+
+      - name: Install Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Regenerate manifest
+        run: node scripts/build-manifest.mjs
+
+      - name: Fail if manifest changed
+        run: |
+          if ! git diff --quiet manifest.json; then
+            echo "::error::manifest.json is stale for this PR."
+            echo "Run 'node scripts/build-manifest.mjs' locally and commit the result."
+            git --no-pager diff manifest.json
+            exit 1
+          fi

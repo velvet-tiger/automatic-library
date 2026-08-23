@@ -1,0 +1,117 @@
+name: Release
+
+# Fires when a semver tag lands on `main`. Produces a signed release
+# archive (`library-vX.Y.Z.zip` + `.minisig`) that the Automatic desktop
+# app downloads and verifies at refresh time.
+#
+# See KEYGEN.md for how the minisign keypair is generated and how the
+# private-key + password secrets are stored in this repo.
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    name: Build and publish signed archive
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      # Route the tag through env: so no shell script interpolates
+      # `${{ github.ref_name }}` directly. github.ref_name is
+      # attacker-controllable if the repo permits arbitrary tag creation.
+      TAG: ${{ github.ref_name }}
+    steps:
+      - name: Check out at the tag
+        uses: actions/checkout@v4
+
+      - name: Install Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify tag matches VERSION file
+        run: |
+          # `TAG` is guaranteed by the `on:` filter to start with `v`.
+          # Extract the semver portion and refuse the run if it does not
+          # match the VERSION file at the tag.
+          VERSION="${TAG#v}"
+          FILE_VERSION="$(tr -d '[:space:]' < VERSION)"
+          if [ "$VERSION" != "$FILE_VERSION" ]; then
+            echo "::error::tag $TAG does not match VERSION file ($FILE_VERSION). Bump VERSION and re-tag." >&2
+            exit 1
+          fi
+          echo "VERSION=$VERSION" >> "$GITHUB_ENV"
+
+      - name: Verify manifest.json is up to date
+        run: |
+          node scripts/build-manifest.mjs
+          if ! git diff --quiet manifest.json; then
+            echo "::error::manifest.json is stale. Run 'node scripts/build-manifest.mjs' locally and commit before tagging." >&2
+            git --no-pager diff manifest.json
+            exit 1
+          fi
+
+      - name: Install minisign
+        run: sudo apt-get update -qq && sudo apt-get install -y minisign
+
+      - name: Build release archive
+        run: |
+          NAME="library-${TAG}.zip"
+          # Exclude the same directories build.rs in automatic-app
+          # excludes when packing this tree into the bundled snapshot:
+          # .git, .github, node_modules, scripts, and dotfiles at the
+          # repository root. Content directories (skills/, rules/,
+          # instructions/, subagents/, hooks/) and machine-readable
+          # indexes (manifest.json, retired.json, VERSION) are kept.
+          zip -r "$NAME" . \
+            -x '.git/*' \
+            -x '.github/*' \
+            -x 'node_modules/*' \
+            -x 'scripts/*' \
+            -x '.gitignore' \
+            -x '.gitmodules' \
+            -x '*/.DS_Store' \
+            -x '.DS_Store'
+          ls -la "$NAME"
+          echo "ARCHIVE=$NAME" >> "$GITHUB_ENV"
+
+      - name: Sign archive with minisign
+        env:
+          MINISIGN_PRIVATE_KEY: ${{ secrets.MINISIGN_PRIVATE_KEY }}
+          MINISIGN_PASSWORD: ${{ secrets.MINISIGN_PASSWORD }}
+        run: |
+          if [ -z "$MINISIGN_PRIVATE_KEY" ]; then
+            echo "::error::MINISIGN_PRIVATE_KEY secret is not set. See KEYGEN.md." >&2
+            exit 1
+          fi
+
+          # Materialise the private key into a file (minisign -s reads a
+          # path, not stdin). Trap ensures the file is deleted even if
+          # signing fails or the runner terminates early.
+          KEY_FILE="$(mktemp)"
+          trap 'rm -f "$KEY_FILE"' EXIT
+          printf '%s' "$MINISIGN_PRIVATE_KEY" > "$KEY_FILE"
+
+          if [ -n "$MINISIGN_PASSWORD" ]; then
+            # Encrypted key: feed the password on stdin.
+            printf '%s\n' "$MINISIGN_PASSWORD" | minisign -Sm "$ARCHIVE" -s "$KEY_FILE"
+          else
+            # Unencrypted key (generated with `minisign -G -W`). No
+            # password to feed. See KEYGEN.md for the trade-off.
+            minisign -Sm "$ARCHIVE" -s "$KEY_FILE" </dev/null
+          fi
+
+          # Sanity: the sig file must exist and be non-empty.
+          test -s "$ARCHIVE.minisig"
+
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$TAG" \
+            "$ARCHIVE" \
+            "$ARCHIVE.minisig" \
+            --title "$TAG" \
+            --generate-notes
