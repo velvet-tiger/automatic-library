@@ -89,10 +89,23 @@ jobs:
 
           # Materialise the private key into a file (minisign -s reads a
           # path, not stdin). Trap ensures the file is deleted even if
-          # signing fails or the runner terminates early.
+          # signing fails or the runner terminates early. Trailing
+          # newline matters — minisign refuses a key file without one.
           KEY_FILE="$(mktemp)"
           trap 'rm -f "$KEY_FILE"' EXIT
-          printf '%s' "$MINISIGN_PRIVATE_KEY" > "$KEY_FILE"
+          printf '%s\n' "$MINISIGN_PRIVATE_KEY" > "$KEY_FILE"
+
+          # Diagnostic shape check without leaking key material: line
+          # count and the prefix of line 1, which for a valid minisign
+          # secret key is exactly `untrusted comment: minisign`.
+          LINES="$(wc -l < "$KEY_FILE" | tr -d ' ')"
+          FIRST_LINE_PREFIX="$(head -n 1 "$KEY_FILE" | cut -c1-35)"
+          echo "key file line count: $LINES"
+          echo "first line prefix: $FIRST_LINE_PREFIX"
+          if [ "$LINES" -lt 2 ]; then
+            echo "::error::MINISIGN_PRIVATE_KEY looks malformed: only $LINES line(s). A minisign secret key has an untrusted-comment line and a base64 blob. Re-save the secret preserving the newline between them." >&2
+            exit 1
+          fi
 
           if [ -n "$MINISIGN_PASSWORD" ]; then
             # Encrypted key: feed the password on stdin.
