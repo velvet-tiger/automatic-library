@@ -1,5 +1,5 @@
 {
-  "library_version": "0.1.1",
+  "library_version": "0.2.0",
   "manifest_schema": 1,
   "assets": [
     {
@@ -24,7 +24,7 @@
       "files": [
         {
           "path": "skills/automatic-code-review/SKILL.md",
-          "sha256": "b9f7741662bbfdd9ad30fc150a2ec3c1b6ff071467500a8326347bb037eb62f3"
+          "sha256": "db3859d95be14f563a38ad957c9e8d15d5f79cec7f65a6b55fc7aeff2723f2d8"
         },
         {
           "path": "skills/automatic-code-review/skill.json",
@@ -109,6 +109,21 @@
     },
     {
       "kind": "skill",
+      "id": "automatic-qa-review",
+      "root": "skills/automatic-qa-review",
+      "files": [
+        {
+          "path": "skills/automatic-qa-review/SKILL.md",
+          "sha256": "8ef259bb2a4a2fd9a5bcb110d813c1d61537c154015004fc4d4646e7bcd9d378"
+        },
+        {
+          "path": "skills/automatic-qa-review/skill.json",
+          "sha256": "22b85dd3f27a4669a333a1919c8ca2e31c3667f7a10dda39c8be778a8d424542"
+        }
+      ]
+    },
+    {
+      "kind": "skill",
       "id": "automatic-refactoring",
       "root": "skills/automatic-refactoring",
       "files": [
@@ -140,11 +155,11 @@
       "files": [
         {
           "path": "skills/automatic-security-review/SKILL.md",
-          "sha256": "8f27e498be1d824da25892c2901f83873d38f86ab547623c55fed75f54e80b92"
+          "sha256": "4a4ff456774f7f152d8813c1149b2e2a1db6e3a8732c56a6cc464d0c983bfa1c"
         },
         {
           "path": "skills/automatic-security-review/skill.json",
-          "sha256": "6b780da1aa468f19f152f2d4f4ae5296df1b0095a28ded7c2a2814efdfb5f7f5"
+          "sha256": "1f755b3c0061fbcf144623a99bd3cbec65e061c5f9141ec74c248da6641ca164"
         }
       ]
     },
@@ -167,7 +182,7 @@
       "kind": "manifest-fragment",
       "id": "skill",
       "path": "skills/skill.json",
-      "sha256": "5bf298f261cf1a6b8b754dff34e2d98dda6a731492f263bc562b06ffd520675f"
+      "sha256": "ef90c1f9ad61a52aade933b3fb8e999e2b7daf9414967821c410fc897d593a57"
     },
     {
       "kind": "rule",
@@ -181,7 +196,7 @@
       "pack": "automatic",
       "id": "general",
       "path": "rules/automatic/general.md",
-      "sha256": "7aa1abd4f961062e71d3deebca66af50d6e3a841a447d3527f53d49ad0d43f34"
+      "sha256": "b2905d8fbaa8063e9643a838693261dfb51c3e3e71aeb6e78800897e3338a5d2"
     },
     {
       "kind": "rule",
@@ -203,6 +218,13 @@
       "id": "prose",
       "path": "rules/automatic/prose.md",
       "sha256": "f232c4ea4a1908941ef3c295859e53e1ca55c6f6a31c736edb0a8623afef906d"
+    },
+    {
+      "kind": "rule",
+      "pack": "automatic",
+      "id": "workflow",
+      "path": "rules/automatic/workflow.md",
+      "sha256": "ae9a55dc87a1ffbbd704126c043789ce0971d29b5bdef5ed30ab54ca2d81931d"
     },
     {
       "kind": "instruction",

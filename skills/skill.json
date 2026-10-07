@@ -2,7 +2,7 @@
   "$schema": "https://skills.json.org/schema/1.0.0/skills.schema.json",
   "name": "automatic-skills",
   "version": "1.0.0",
-  "description": "Skills authored by Automatic for use with the Automatic desktop app. Covers general engineering practice (API design, code review, database design, debugging, documentation, llms.txt, performance, refactoring, security review, testing), skill and remote-source authoring, and Claude 4.7 collaboration patterns.",
+  "description": "Skills authored by Automatic for use with the Automatic desktop app. Covers general engineering practice (API design, code review, database design, debugging, documentation, llms.txt, performance, QA review, refactoring, security review, testing), skill and remote-source authoring, and Claude 4.7 collaboration patterns.",
   "author": {
     "name": "Automatic",
     "url": "https://github.com/velvet-tiger/automatic"
@@ -65,6 +65,13 @@
       "tags": ["performance", "optimization", "profiling", "latency", "memory", "bottleneck"]
     },
     {
+      "name": "automatic-qa-review",
+      "path": "./automatic-qa-review",
+      "description": "Adversarial QA review of a ticket's production and test diffs. Verifies every acceptance criterion has test coverage that exercises the real production path and would fail on a regression. Use after development work, alongside the Security Reviewer skill.",
+      "category": "development",
+      "tags": ["qa", "review", "testing", "acceptance-criteria", "boundary-cases", "adversarial-review"]
+    },
+    {
       "name": "automatic-refactoring",
       "path": "./automatic-refactoring",
       "description": "Techniques for improving code structure without changing behaviour. Use when cleaning up code, reducing complexity, or addressing technical debt.",
@@ -74,9 +81,9 @@
     {
       "name": "automatic-security-review",
       "path": "./automatic-security-review",
-      "description": "Security review checklist and threat mindset for any codebase. Use when reviewing code for vulnerabilities, implementing auth, or handling user input.",
+      "description": "Adversarial security review of a ticket's production diff, the code paths it reaches, and its dependency and infrastructure changes. Use after development work, alongside the QA Reviewer skill.",
       "category": "development",
-      "tags": ["security", "vulnerability", "auth", "review", "threat-model", "input-validation"]
+      "tags": ["security", "vulnerability", "auth", "review", "adversarial-review", "data-flow", "dependencies", "infrastructure"]
     },
     {
       "name": "automatic-testing",

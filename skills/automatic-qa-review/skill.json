@@ -1,0 +1,26 @@
+{
+  "$schema": "https://skills.json.org/schema/1.0.0/skills.schema.json",
+  "name": "automatic-qa-review",
+  "version": "1.0.0",
+  "description": "Adversarial QA review of a diff against its acceptance criteria, with production-path coverage and boundary-case checks",
+  "author": {
+    "name": "Automatic",
+    "url": "https://github.com/velvet-tiger/automatic"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/velvet-tiger/automatic-library.git",
+    "directory": "skills/automatic-qa-review"
+  },
+  "keywords": ["qa", "review", "testing", "acceptance-criteria", "boundary-cases"],
+  "skills": [
+    {
+      "name": "automatic-qa-review",
+      "path": ".",
+      "description": "Adversarial QA review of a ticket's production and test diffs. Verifies every acceptance criterion has test coverage that exercises the real production path and would fail on a regression. Use after development work, alongside the Security Reviewer skill.",
+      "category": "development",
+      "tags": ["qa", "review", "testing", "acceptance-criteria", "boundary-cases", "adversarial-review"]
+    }
+  ]
+}

@@ -27,7 +27,7 @@ Review the code, not the person. Every comment should serve the goal of shipping
 - Is user input validated and sanitised before use?
 - Are secrets or credentials ever logged or exposed?
 - Are permissions and authorisation checks in the right place?
-- See the `security-review` skill for a full checklist
+- See the `automatic-security-review` skill for a full review procedure
 
 ### Design
 - Does the change fit the existing architecture, or does it introduce inconsistency?

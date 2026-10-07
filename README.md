@@ -32,10 +32,11 @@ These are the most useful part of this repository. These rules are tested and pr
 
 | Rule | What it says |
 |---|---|
-| [`general`](rules/automatic/general.md) | The Constitution for AI coding agents. Twenty rules preventing common failure modes (no aimless loops, confirm before creation, respect local context, report state truthfully), concrete do/don't guidance for a session, and the voice the agent should bring to substantive work. |
+| [`general`](rules/automatic/general.md) | The Constitution for AI coding agents. Twenty-one rules preventing common failure modes (no aimless loops, confirm before creation, respect local context, report state truthfully), concrete do/don't guidance for a session, and the voice the agent should bring to substantive work. |
 | [`code`](rules/automatic/code.md) | Named stopping-points where a bad pattern is about to be written, paired with the pattern that should take its place. Explicit typing, composition over inheritance, dependency injection, error handling with context, idempotency, security-aware defaults, and more. |
 | [`process`](rules/automatic/process.md) | A seven-phase problem-solving process: understand, context, plan, communicate, implement, verify, summarise. Includes a mandatory stop before the first mutating tool call. |
 | [`prose`](rules/automatic/prose.md) | Rules for writing prose that humans read, including chat replies: short sentences, one idea each, no em-dashes, no meta-narration, plain words. |
+| [`workflow`](rules/automatic/workflow.md) | The review workflow after development: decide QA and security review scope from the diff, run reviewers in parallel against the commit, fix blocking findings, and re-check. Stops after two fix rounds. |
 | [`gitignore`](rules/automatic/gitignore.md) | The block Automatic writes into a project's `.gitignore` to keep managed agent config out of version control. |
 
 
@@ -52,8 +53,9 @@ Skills teach an agent how to approach a category of work. Each one is a self-con
 | [`automatic-documentation`](skills/automatic-documentation/) | Principles for writing READMEs, API docs, ADRs, code comments, and changelogs. |
 | [`automatic-llms-txt`](skills/automatic-llms-txt/) | Creating and maintaining `llms.txt` files following the llmstxt.org standard. |
 | [`automatic-performance`](skills/automatic-performance/) | A data-driven approach to identifying and resolving performance bottlenecks. |
+| [`automatic-qa-review`](skills/automatic-qa-review/) | Adversarial QA review of a diff against its acceptance criteria: production-path test coverage, boundary cases, coverage matrix. |
 | [`automatic-refactoring`](skills/automatic-refactoring/) | Techniques for improving code structure without changing behaviour. |
-| [`automatic-security-review`](skills/automatic-security-review/) | Security review checklist and threat mindset for any codebase. |
+| [`automatic-security-review`](skills/automatic-security-review/) | Adversarial security review of a diff and the code paths it reaches: data-flow tracing, authorisation checks, per-language and per-platform checks, severity-ranked report. |
 | [`automatic-testing`](skills/automatic-testing/) | Principles and patterns for writing effective unit, integration, and end-to-end tests. |
 | [`automatic-remote-source-authoring`](skills/automatic-remote-source-authoring/) | How to publish resources through Automatic's remote-source system. `automatic.json` manifests, `skill.json` references, collections, badges, and directory structure. |
 
