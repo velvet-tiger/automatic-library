@@ -35,9 +35,11 @@ as security surface.
     - QA reviewer: QA Reviewer skill.
     - Security reviewer: Security Reviewer skill.
       If worktrees are unavailable, run the security review first, then QA.
-4. Merge the findings. Critical and High findings are blocking.
-5. Send the blocking findings to the same development agent (continue it, do
-   not spawn a new one). It fixes them and commits.
+4. Merge the findings. Critical and High findings are blocking. Medium and Low
+   findings are fixed in the same fix round, unless a fix needs an owner
+   decision or the user gated it.
+5. Send every finding that is to be fixed to the same development agent
+   (continue it, do not spawn a new one). It fixes them and commits.
 6. Send each fixed finding to the reviewer that raised it, for re-check only.
 7. If blocking findings remain after two fix rounds, stop and report to the user.
 
@@ -45,5 +47,8 @@ as security surface.
 
 - Scope decision and which rows of the table applied.
 - Check results.
-- Findings, with status: fixed, open, or disputed.
+- Findings, with status: fixed, disputed, or needs the owner. "Needs the owner"
+  is allowed only for the three reasons in Phase 7 of the process rule: an owner
+  decision, an explicit user gate, or an unrelated item. Each comes with one
+  recommendation, or the ticket for an unrelated item.
 - Anything verified by inspection only.

@@ -1,5 +1,5 @@
 {
-  "library_version": "0.2.0",
+  "library_version": "0.2.1",
   "manifest_schema": 1,
   "assets": [
     {
@@ -196,7 +196,7 @@
       "pack": "automatic",
       "id": "general",
       "path": "rules/automatic/general.md",
-      "sha256": "b2905d8fbaa8063e9643a838693261dfb51c3e3e71aeb6e78800897e3338a5d2"
+      "sha256": "8459f87c02dd55ba4b3de9a62a3153794ac778e8a5b51963ee61e69a90b59855"
     },
     {
       "kind": "rule",
@@ -210,7 +210,7 @@
       "pack": "automatic",
       "id": "process",
       "path": "rules/automatic/process.md",
-      "sha256": "8a0eae1c57de57cf4c27c4abcac69d885fe3dc4c5ee46e7b743a9a3a2ed91efc"
+      "sha256": "fb420b9856779aa435808f0f692d271e5f692652f8a5ab4c30363c4a2db90b95"
     },
     {
       "kind": "rule",
@@ -224,7 +224,7 @@
       "pack": "automatic",
       "id": "workflow",
       "path": "rules/automatic/workflow.md",
-      "sha256": "ae9a55dc87a1ffbbd704126c043789ce0971d29b5bdef5ed30ab54ca2d81931d"
+      "sha256": "8529d5e484f2f83419652e78dc2cebcaabf2c8208ac27905a963e72ec7e855af"
     },
     {
       "kind": "instruction",

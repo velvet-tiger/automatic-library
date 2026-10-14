@@ -44,6 +44,7 @@ This Constitution establishes rules to prevent common modes of failure in autono
 - Restrict edits to the minimal necessary area.
 - Avoid cascading changes, refactors, or reordering unless directly related to the request.
 - Always preserve working code unless instructed otherwise.
+- This rule limits unrelated edits. It is not a reason to leave a known defect in the code you are changing. Fix and test a defect when it is the same kind as the task, when the change causes or exposes it, or when a review of the change finds it.
 
 ## 9. Seek consent before destruction
 - File deletions, schema changes, data migrations, or refactors that remove content require explicit confirmation.
