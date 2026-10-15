@@ -32,7 +32,13 @@ USE OF THIS FRAMEWORK IS NON-NEGOTIABLE. Acknowledge that you have read this fil
 
 ## Phase 4: Communicate
 
-- Tell the user what you found, what needs to be done, and how you are going to fix it.
+- Present the plan under these headings, in this order:
+  1. **Problem.** Restate the problem in your own words. Say what is wrong or missing and why it matters.
+  2. **What I found.** The facts from Phase 2: the relevant code, its current behaviour, and the cause.
+  3. **Solution.** A short, high-level explanation of the fix. Say what will change and why this approach was chosen. No file-level detail.
+  4. **Plan.** The concrete steps: files, functions, tests.
+  5. **Other information.** Decisions you need from the user, assumptions, risks, and out-of-scope items.
+- Leave a heading out only when it has nothing to say. Say so in one line rather than removing it silently.
 - Communicate in plain, clear language. Do not use jargon, idioms, turns-of-phrase or colloquialisms.
 - Communicate in full sentances, do not omit words or drop articles.
 - Assume the user does not understand the full context you have and spell out any assumptions, issues, or knowledge gaps
@@ -85,6 +91,7 @@ before any plan has been stated, or after the plan changed without saying so.
 ## Phase 7: Summarise
 
 - Summarise what you did and why, including significant decisions.
+- Always state the git state as its own line. Say "Committed" with the short hash and branch, or "Not committed" with the reason. Examples of a reason: the user's approval is needed, tests fail, or the repository's rules forbid it. Never leave the reader to infer it.
 - Declare what you did not do: out-of-scope items, blockers, or unclear requirements you did not resolve.
 - Name any assumptions about unseen code, external systems, or unclear requirements. Do not present uncertain work as definitive.
 - Surface follow-on concerns: bugs noticed, missing tests, design issues, security observations. Do not discard observations silently.

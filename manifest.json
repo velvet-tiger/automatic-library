@@ -210,7 +210,7 @@
       "pack": "automatic",
       "id": "process",
       "path": "rules/automatic/process.md",
-      "sha256": "fb420b9856779aa435808f0f692d271e5f692652f8a5ab4c30363c4a2db90b95"
+      "sha256": "9a7a5c7746158b8c3c2dcf2925ab7e44e30bfb0f968ca245b57209ac4082a8d2"
     },
     {
       "kind": "rule",
