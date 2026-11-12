@@ -26,10 +26,11 @@ jobs:
       - name: Install Node 24
         uses: actions/setup-node@v4
         with:
-          # Pin at/above 24.22.2. Node 20 is EOL and will never get
-          # CVE-2026-111497 (Brotli decoder). 24.22.1 has the fix;
-          # 24.22.2 also restores a regression in that security release.
-          node-version: '24.22.2'
+          # Pin at/above 24.22.3 (Nov 2026 security release). Node 20 is
+          # EOL and will never get CVE-2026-111497 (Brotli decoder).
+          # 24.22.1 has that fix; 24.22.2 restored a regression in it;
+          # 24.22.3 patches CVE-2026-123863 and related HTTP/2/TLS issues.
+          node-version: '24.22.3'
 
       - name: Regenerate manifest
         run: node scripts/build-manifest.mjs
